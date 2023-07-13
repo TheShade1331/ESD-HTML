@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        h2{
+            color: red;
+        }
+        h3{
+            color: orange;
+        }
+
+        /*Class Selector*/
+        .para {
+            font-size: larger;
+        }
+
+        /* ID Selector */
+        #para {
+            font-size: medium;
+        }
+        /* Combinator CSS */ 
+        p.comb, p#comb {
+            color:blue;
+        }
+        /* Universal Selector */
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div>p{
+            color: red;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h2>this is a h2 tag</h2>
+    <h3>this is a h3 tag</h3>
+
+    <p class="para">this is a paragraph for class</p>
+    <p id="para">this is a paragraph for id</p>
+
+    <h1 class="comb">Heading Text</h1>
+    <p class="comb">Paragraph Text</p>
+    <div style="width:100%; border: 1px solid black;">
+        <p>This para is in div block.</p>
+    </div>
+    
+    <div style="width: 20%; border: 1px solid black">
+        <span>
+            <p>This Para is in div Block</p>
+        </span>
+    </div>
+</html>
