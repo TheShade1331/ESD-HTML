@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Element By ID</title>
+</head>
+<body>
+    <p id="paraID">This is a Paragraph. </p>
+    <Button onclick="changeText()">Change Text</Button>
+
+    <script>
+        function changeText() {
+            document.getElementById("paraID").innerHTML
+            = "This is a replace paragraph."
+
+            const ele = document.getElementById("paraID");
+            ele.innerHTML = "This is a Replace Paragraph."
+        }
+    </script>
+</body>
+</html>

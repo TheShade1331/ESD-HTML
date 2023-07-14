@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector</title>
+</head>
+<body>
+    <p class="para">First Paragraph</p>
+    <p>Second Paragraph</p>
+    <p class="para">Third Paragraph</p>
+    <p class="para2">Fourth Paragraph</p>
+    <div class="para">
+        Dummy text
+    </div>
+
+    <script>
+        // const para = document.querySelectorAll("p.para");
+        // para.innerHTML = "Replaced Text."
+        const paras = document.querySelectorAll("p.para");
+        for (let i=0; i<paras.length; i++){
+            paras[i].innerHTML = "Replaced Text"
+        }
+    </script>
+</body>
+</html>

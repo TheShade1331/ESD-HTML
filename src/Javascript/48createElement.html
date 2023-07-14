@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create my Element</title>
+  </head>
+  <body>
+    <div id="divId"></div>
+    <p id="brand">Tech Cryptors</p>
+    <script>
+      const para = document.getElementById("brand");
+      para.parentNode.removeChild(para);
+      
+      const myElement = document.createElement("a");
+      myElement.setAttribute("href", "https://google.com/");
+      myElement.innerHTML = "This is a Paragraph.";
+      document.body.appendChild(myElement);
+
+      const div = document.getElementById("divid");
+      div.appendChild(myElement);
+    </script>
+  </body>
+</html>

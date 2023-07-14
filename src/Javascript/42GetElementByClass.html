@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Element By Class</title>
+</head>
+<body>
+    <p class="para">First Language</p>
+    <p>Second Paragraph</p>
+    <p class="para">Third Language</p>
+    <p class="para">Fourth Language</p>
+
+    <script>
+        const paras = document.getElementsByClassName("para")
+
+        for(let i=0; i<paras.length; i++){
+            paras[i].innerHTML = "Para No. " + (i + 1)
+        }
+    </script>
+</body>
+</html>

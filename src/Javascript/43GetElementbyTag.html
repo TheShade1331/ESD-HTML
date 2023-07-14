@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Element By Tag</title>
+</head>
+<body>
+    <p class="para">First Paragraph</p>
+    <p>Second Paragraph</p>
+    <p class="para">Third Paragraph</p>
+    <p class="para2">Fourth Paragraph</p>
+    <button onclick="changeText()">Change Text</button>
+
+    <script>
+        const paras = document.getElementsByTagName("p")
+
+        for(let i=0; i<paras.length; i++){
+            paras[i].innerHTML = "Para No. " + (i + 1)
+        }
+    </script>
+</body>
+</html>
